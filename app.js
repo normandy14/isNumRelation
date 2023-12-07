@@ -3,6 +3,9 @@ const DEBUG = false;
 class isNumRelation {
 	constructor(numList) {
 		// check list size: exception in list length is over 10
+		if (numList.length > 10) {
+			throw new Error("More than 10");
+		}
 		this.numList = numList
 	}
 	
@@ -78,4 +81,11 @@ console.log(numRelation2.isEmpty());
 console.log(numRelation2.isAllEven());
 console.log(numRelation2.isAllOdd());
 console.log(numRelation2.isNoRelation());
+
+try {
+  var numList = [1, 3, 11, 13, 15, 16, 17, 18, 19, 20 , 21, 22, 23];
+  const numRelation3 = new isNumRelation(numList);
+} catch (e) {
+  console.error(e);
+}
 
