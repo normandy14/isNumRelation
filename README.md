@@ -31,7 +31,7 @@ Implentation of Yugioh Duel built with the following technologies:
 
 ## License
 
-This project is licensed under the GPL-3.0 license [License](LICENSE.md) - see the LICENSE.md file for details
+This project is licensed under the GPL-3.0 license [License](LICENSE) - see the LICENSE.md file for details
 
 ## Authors
 
