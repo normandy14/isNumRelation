@@ -2,6 +2,7 @@ const DEBUG = false;
 
 class isNumRelation {
 	constructor(numList) {
+		// check list size: exception in list length is over 10
 		this.numList = numList
 	}
 	
@@ -37,12 +38,30 @@ class isNumRelation {
 		return true;
 	}
 	
+	isAllPrime() {
+		return;
+	}
+	
+	isAllComposite() {
+		return;
+	}
+	
 	isNoRelation() {
 		if (this.isAllEven() == false && this.isAllOdd() == false) {
 			return true;
 		}
 		return false;
 	}
+	
+	/*
+	isAllMultipleOf() {
+		return;
+	}
+	*/
+	
+	// is all Positive, is all Negative
+	// is all greater than, is all less than
+	
 }
 
 var numList1 = [1, 2, 3, 4];
