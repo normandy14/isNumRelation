@@ -1,6 +1,6 @@
-# isNumRelation :neutral_face:
+# isNumRelation :chart_with_upwards_trend:
 
-## What is isNumRelation
+## What is Is Num Relation
 
 isNumRelation is a small javascript program to find relationships -- even, odd, prime, composite, etc -- between a list of numbers. 
 If no relationship is found, then no relation.
