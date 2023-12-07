@@ -16,9 +16,7 @@ class isNumRelation {
 	
 	isAllEven() {
 		var num = 0
-		for (var i =0; i < this.numList.length; i++) {
-			num = this.numList[i]
-			// console.log(num);
+		for (num in this.numList) {
 			if (num % 2 != 0) {
 				return false;
 			}
@@ -28,9 +26,7 @@ class isNumRelation {
 	
 	isAllOdd() {
 		var num = 0
-		for (var i =0; i < this.numList.length; i++) {
-			num = this.numList[i]
-			// console.log(num);
+		for (num in this.numList) {
 			if (num % 2 != 1) {
 				return false;
 			}
@@ -63,11 +59,23 @@ class isNumRelation {
 	// is all greater than, is all less than
 	
 }
-
-var numList1 = [1, 2, 3, 4];
+/*
+// Case 1
+var numList = [1, 2, 3, 4];
+console.log(numList)
 // var numList1 = [1, 3, 11, 13];
-const numRelation = new isNumRelation(numList1);
-if (DEBUG) {console.log(numRelation.isEmpty())};
-console.log(numRelation.isAllEven());
-console.log(numRelation.isAllOdd());
-console.log(numRelation.isNoRelation());
+const numRelation1 = new isNumRelation(numList);
+console.log(numRelation1.isEmpty());
+console.log(numRelation1.isAllEven());
+console.log(numRelation1.isAllOdd());
+console.log(numRelation1.isNoRelation());
+*/
+
+var numList = [1, 3, 11, 13];
+console.log(numList)
+const numRelation2 = new isNumRelation(numList);
+console.log(numRelation2.isEmpty());
+console.log(numRelation2.isAllEven());
+console.log(numRelation2.isAllOdd());
+console.log(numRelation2.isNoRelation());
+
