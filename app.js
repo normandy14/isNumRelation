@@ -13,8 +13,8 @@ class isNumRelation {
 		this.numList = numList
 	}
 	
-	#isEmpty = (list) => {
-		if (list.length > 0) {
+	#isEmpty = (numList) => {
+		if (numList.length > 0) {
 			return false;
 		}
 		return true;
