@@ -6,6 +6,7 @@ class isNumRelation {
 		if (numList.length > 10) {
 			throw new Error("More than 10");
 		}
+		// check if list size is empty
 		if (this.isEmpty(numList) == true) {
 			throw new Error("No numbers in list");	
 		}
@@ -14,7 +15,6 @@ class isNumRelation {
 	
 	isEmpty(list) {
 		if (list.length > 0) {
-			if (DEBUG) {console.log(list.length)}
 			return false;
 		}
 		return true;
@@ -22,7 +22,8 @@ class isNumRelation {
 	
 	isAllEven() {
 		var num = 0
-		for (num in this.numList) {
+		for (var i in this.numList) {
+			num = this.numList[i]
 			if (num % 2 != 0) {
 				return false;
 			}
@@ -32,7 +33,8 @@ class isNumRelation {
 	
 	isAllOdd() {
 		var num = 0
-		for (num in this.numList) {
+		for (var i in this.numList) {
+			num = this.numList[i]
 			if (num % 2 != 1) {
 				return false;
 			}
@@ -77,12 +79,20 @@ console.log(numRelation1.isAllOdd());
 console.log(numRelation1.isNoRelation());
 */
 
-var numList = [1, 3, 11, 13];
+var numList = [2, 4, 8, 10];
 console.log(numList)
 const numRelation2 = new isNumRelation(numList);
 console.log(numRelation2.isAllEven());
 console.log(numRelation2.isAllOdd());
 console.log(numRelation2.isNoRelation());
+
+var numList = [1, 3, 7, 11];
+console.log(numList)
+const numRelation4 = new isNumRelation(numList);
+console.log(numRelation4.isAllEven());
+console.log(numRelation4.isAllOdd());
+console.log(numRelation4.isNoRelation());
+
 
 
 try {
