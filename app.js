@@ -67,44 +67,44 @@ class isNumRelation {
 	// is all greater than, is all less than
 	
 }
-/*
+
 // Case 1
 var numList = [1, 2, 3, 4];
 console.log(numList)
-// var numList1 = [1, 3, 11, 13];
-const numRelation1 = new isNumRelation(numList);
-console.log(numRelation1.isEmpty());
-console.log(numRelation1.isAllEven());
-console.log(numRelation1.isAllOdd());
-console.log(numRelation1.isNoRelation());
-*/
+var numRelation = new isNumRelation(numList);
+console.log(numRelation.isAllEven());
+console.log(numRelation.isAllOdd());
+console.log(numRelation.isNoRelation());
+delete numRelation;
+
 
 var numList = [2, 4, 8, 10];
 console.log(numList)
-const numRelation2 = new isNumRelation(numList);
-console.log(numRelation2.isAllEven());
-console.log(numRelation2.isAllOdd());
-console.log(numRelation2.isNoRelation());
+var numRelation = new isNumRelation(numList);
+console.log(numRelation.isAllEven());
+console.log(numRelation.isAllOdd());
+console.log(numRelation.isNoRelation());
+delete numRelation;
 
 var numList = [1, 3, 7, 11];
-console.log(numList)
-const numRelation4 = new isNumRelation(numList);
-console.log(numRelation4.isAllEven());
-console.log(numRelation4.isAllOdd());
-console.log(numRelation4.isNoRelation());
-
+console.log(numList);
+var numRelation = new isNumRelation(numList);
+console.log(numRelation.isAllEven());
+console.log(numRelation.isAllOdd());
+console.log(numRelation.isNoRelation());
+delete numRelation;
 
 
 try {
   var numList = [1, 3, 11, 13, 15, 16, 17, 18, 19, 20 , 21, 22, 23];
-  const numRelation3 = new isNumRelation(numList);
+  const numRelation = new isNumRelation(numList);
 } catch (e) {
   console.error(e);
 }
 
 try {
   var numList = [];
-  const numRelation4 = new isNumRelation(numList);
+  const numRelation = new isNumRelation(numList);
 } catch (e) {
   console.error(e);
 }
