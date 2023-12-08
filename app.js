@@ -13,14 +13,14 @@ class isNumRelation {
 		this.numList = numList
 	}
 	
-	#isEmpty(list) {
+	#isEmpty = (list) => {
 		if (list.length > 0) {
 			return false;
 		}
 		return true;
 	}
 	
-	isAllEven() {
+	isAllEven = () => {
 		var num = 0
 		for (var i in this.numList) {
 			num = this.numList[i]
@@ -31,7 +31,7 @@ class isNumRelation {
 		return true;
 	}
 	
-	isAllOdd() {
+	isAllOdd = () => {
 		var num = 0
 		for (var i in this.numList) {
 			num = this.numList[i]
@@ -42,15 +42,15 @@ class isNumRelation {
 		return true;
 	}
 	
-	isAllPrime() {
+	isAllPrime = () => {
 		return;
 	}
 	
-	isAllComposite() {
+	isAllComposite = () => {
 		return;
 	}
 	
-	isNoRelation() {
+	isNoRelation = () => {
 		if (this.isAllEven() == false && this.isAllOdd() == false) {
 			return true;
 		}

@@ -1,4 +1,4 @@
-function toNumList(string) {
+const toNumList = (string) => {
 	numString = string.split(",");
 	// console.log(numString);
 	numList = []
