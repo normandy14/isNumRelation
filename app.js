@@ -7,13 +7,13 @@ class isNumRelation {
 			throw new Error("More than 10");
 		}
 		// check if list size is empty
-		if (this.isEmpty(numList) == true) {
+		if (this.#isEmpty(numList) == true) {
 			throw new Error("No numbers in list");	
 		}
 		this.numList = numList
 	}
 	
-	isEmpty(list) {
+	#isEmpty(list) {
 		if (list.length > 0) {
 			return false;
 		}
