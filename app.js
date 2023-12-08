@@ -6,12 +6,15 @@ class isNumRelation {
 		if (numList.length > 10) {
 			throw new Error("More than 10");
 		}
+		if (this.isEmpty(numList) == true) {
+			throw new Error("No numbers in list");	
+		}
 		this.numList = numList
 	}
 	
-	isEmpty() {
-		if (this.numList.length > 0) {
-			if (DEBUG) {console.log(this.numList.length)}
+	isEmpty(list) {
+		if (list.length > 0) {
+			if (DEBUG) {console.log(list.length)}
 			return false;
 		}
 		return true;
@@ -77,14 +80,21 @@ console.log(numRelation1.isNoRelation());
 var numList = [1, 3, 11, 13];
 console.log(numList)
 const numRelation2 = new isNumRelation(numList);
-console.log(numRelation2.isEmpty());
 console.log(numRelation2.isAllEven());
 console.log(numRelation2.isAllOdd());
 console.log(numRelation2.isNoRelation());
 
+
 try {
   var numList = [1, 3, 11, 13, 15, 16, 17, 18, 19, 20 , 21, 22, 23];
   const numRelation3 = new isNumRelation(numList);
+} catch (e) {
+  console.error(e);
+}
+
+try {
+  var numList = [];
+  const numRelation4 = new isNumRelation(numList);
 } catch (e) {
   console.error(e);
 }
