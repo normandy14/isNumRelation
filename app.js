@@ -67,7 +67,7 @@ class isNumRelation {
 	// is all greater than, is all less than
 
 }
-
+alert ("Hello from app.js")
 if (DEBUG) {
 	// Case 1: Sequential numbers
 	var numList = [1, 2, 3, 4];
