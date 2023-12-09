@@ -1,15 +1,19 @@
-const toNumList = (string) => {
+// const DEBUG = false;
+
+let toNumList = (string) => {
 	numString = string.split(",");
 	// console.log(numString);
 	numList = []
-	var i = 0;
-	for (s in numString) {
+	for (var i in numString) {
 		// console.log(s);
-		i = parseInt(s)
-		numList.push(i);
+		num = numString[i];
+		s = parseInt(num);
+		numList.push(s);
 	}
 	return numList
 }
 
-var numList = toNumList("2, 3, 4, 8");
-console.log(numList)
+if (DEBUG) {
+	var numList = toNumList("2, 4, 6, 8");
+	console.log(numList);
+}

@@ -3,18 +3,31 @@
   <input type="submit">
 </form>
 <script src="app.js"></script>
+<script src="appHelp.js"></script>
 <script>
-
   // prevent reloading of page when javaScript form submits
   var form = document.getElementById("myForm");
   handleForm = (event) => {
     event.preventDefault();
   }
   form.addEventListener('submit', handleForm);
-
+</script>
+<script defer>
   getUserInput = () => {
-    let userInput = document.getElementById("UserInput");
-    console.log(userInput.name);
-    console.log(userInput.value);
+    let string = document.getElementById("UserInput");
+    let userInput = string.value;
+    console.log(userInput);
+    let numList = toNumList(userInput);
+    console.log(numList);
+    toNumberRelation(numList);
   }
+
+  toNumberRelation = (numList) => {
+    console.log(numList)
+    var numRelation = new isNumRelation(numList);
+    console.log(numRelation.isAllEven());
+    console.log(numRelation.isAllOdd());
+    console.log(numRelation.isNoRelation());
+  }
+
 </script>
