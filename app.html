@@ -1,10 +1,20 @@
-<form onsubmit="myFunction()">
-  Enter numbers: <input type="text" name="UserInput">
+<form id="myForm" onsubmit="getUserInput()">
+  Enter numbers: <input type="text" id="UserInput" name="UserInput">
   <input type="submit">
 </form>
 <script src="app.js"></script>
 <script>
-  function myFunction() {
-    alert("Hello World");
+
+  // prevent reloading of page when javaScript form submits
+  var form = document.getElementById("myForm");
+  function handleForm(event) {
+    event.preventDefault();
+  }
+  form.addEventListener('submit', handleForm);
+
+  getUserInput = () => {
+    let userInput = document.getElementById("UserInput");
+    console.log(userInput.name);
+    console.log(userInput.value);
   }
 </script>
