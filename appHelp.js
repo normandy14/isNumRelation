@@ -1,3 +1,6 @@
+// TODO:
+// toNumList with ',' vs ' '
+
 const DEBUG2 = true;
 
 let toNumList = (string) => {
