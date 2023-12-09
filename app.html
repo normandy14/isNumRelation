@@ -7,7 +7,7 @@
 
   // prevent reloading of page when javaScript form submits
   var form = document.getElementById("myForm");
-  function handleForm(event) {
+  handleForm = (event) => {
     event.preventDefault();
   }
   form.addEventListener('submit', handleForm);
