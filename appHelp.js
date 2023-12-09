@@ -1,4 +1,4 @@
-// const DEBUG = false;
+const DEBUG2 = true;
 
 let toNumList = (string) => {
 	numString = string.split(",");
@@ -13,7 +13,7 @@ let toNumList = (string) => {
 	return numList
 }
 
-if (DEBUG) {
+if (DEBUG2) {
 	var numList = toNumList("2, 4, 6, 8");
 	console.log(numList);
 }
