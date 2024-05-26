@@ -16,10 +16,10 @@ This program uses html to get user input, and then uses html to return relations
 ## Running the program
 
 ```
-npm .
+node .
 ```
 
-npm will run main.js.
+node . will run main.js.
 Set DEBUG in main.js file to true to see output of program
 
 ## Running the tests
