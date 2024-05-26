@@ -1,6 +1,6 @@
-const hello = require('./app');
+const { isNumRelation } = require("./app");
 
-const DEBUG = false;
+const DEBUG = true;
 
 // alert ("Hello from app.js")
 if (DEBUG) {

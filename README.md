@@ -2,7 +2,7 @@
 
 ## What is Is Num Relation
 
-isNumRelation is a small javascript program to find relationships -- even, odd, prime, composite, etc -- between a list of numbers. 
+isNumRelation is a small javascript program to find relationships -- even, odd, prime, composite, etc -- between a list of numbers.
 If no relationship is found, then no relation.
 
 ## What this is About
@@ -13,9 +13,18 @@ This program uses JavaScript. Uses JavaScript classes. Starting with es5, ending
 ### HTML5 and CCS3
 This program uses html to get user input, and then uses html to return relationships to user
 
+## Running the program
+
+```
+npm .
+```
+
+npm will run main.js.
+Set DEBUG in main.js file to true to see output of program
+
 ## Running the tests
 
-Explain how to run the automated tests for this system:
+Runs the tests for the program:
 
 ```
 npm run test
