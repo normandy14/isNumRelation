@@ -1,3 +1,4 @@
+//const toNumList = require('./appHelp')
 
 class isNumRelation {
 	constructor(numList) {

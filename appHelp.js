@@ -1,7 +1,7 @@
 // TODO:
 // toNumList with ',' vs ' '
 
-const DEBUG2 = true;
+const DEBUG2 = false;
 
 let toNumList = (string) => {
 	numString = string.split(",");
@@ -15,6 +15,8 @@ let toNumList = (string) => {
 	}
 	return numList
 }
+
+module.exports = toNumList;
 
 if (DEBUG2) {
 	var numList = toNumList("2, 4, 6, 8");
