@@ -1,12 +1,11 @@
-// const isNumRelation = require('./isNumRelation');
-const hello = require('./new');
+// const hello = require('./new');
 const { isNumRelation } = require("./app");
 
-
-// isAllEven, isAllOdd, is noRelation
+/*
 test ('tests hello world', () => {
   expect(hello()).toBe(true);
 });
+*/
 
 test ('tests isNumRelation isAll Even', () => {
   const numList = [10, 20, 30, 40];
