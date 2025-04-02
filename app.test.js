@@ -91,7 +91,40 @@ test ('tests noRelation is true small', () => {
   expect (relation.isNoRelation()).toBe(true);
 });
 
+
+test("tests too many numbers exception", () => {
+  try {
+      var numList = [1, 3, 11, 13, 15, 16, 17, 18, 19, 20 , 21, 22, 23];
+      const numRelation = new isNumRelation(numList);
+      // throwError();
+      // Fail test if above expression doesn't throw anything.
+      expect(true).toBe(false);
+  } catch (e) {
+      expect(e.message).toBe("More than 10");
+  }
+});
+
+test("tests no numbers exception", () => {
+  try {
+      var numList = [];
+      const numRelation = new isNumRelation(numList);
+      // throwError();
+      // Fail test if above expression doesn't throw anything.
+      expect(true).toBe(false);
+  } catch (e) {
+      expect(e.message).toBe("No numbers in list");
+  }
+});
+
+
 /*
+test("tests too many numbers exception", () => {
+  var numList = [1, 3, 11, 13, 15, 16, 17, 18, 19, 20 , 21, 22, 23];
+  expect(() => {
+   const numRelation = new isNumRelation(numList););
+ }).toThrow("More than 10");
+})
+
 test('first test from isNumRelation', () => {
   const numList = [1, 3, 5, 7];
   let relation = isNumRelation(numList);
