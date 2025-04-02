@@ -5,6 +5,24 @@
 isNumRelation is a small javascript program to find relationships -- even, odd, prime, composite, etc -- between a list of numbers.
 If no relationship is found, then no relation.
 
+## How to Use
+
+you must enter the numbers with commas in between, as in 
+
+```
+2, 4, 6, 8
+```
+
+the two relations are the follwing: 
+
+* all is even
+* all is odd
+
+there are 2 exceptions that are the following: 
+
+* too many numbers (greater than 10 inputs)
+* no numbers at all (0 inputs)
+
 ## What this is About
 
 ### JavaScript
