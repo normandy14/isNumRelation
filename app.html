@@ -4,11 +4,25 @@
   convert array to text from ex: [false, true, false] to ['isOdd']
   Convert isOdd to text box
 -->
-<form id="myForm" onsubmit="getUserInput()">
-  Enter numbers: <input type="text" id="UserInput" name="UserInput">
-  <input type="submit">
-</form>
-<div id="numRelationOutput" name="numRelationOutput"></div>
+<html>
+<head>
+  <link rel="stylesheet" href="simple.css">
+</head>
+<main>
+  <header>
+      <h1>Is Num Relation</h1>
+      <p>Put numbers into the textbox to see the relation</p>
+    </header>
+    <body>
+      <form id="myForm" onsubmit="getUserInput()">
+        Enter numbers: <input type="text" id="UserInput" name="UserInput">
+        <input type="submit">
+      </form>
+    <div id="numRelationOutput" name="numRelationOutput"></div>
+  </body>
+</main>
+</html>
+
 <script src="app.js"></script>
 <script src="appHelp.js"></script>
 <script>
