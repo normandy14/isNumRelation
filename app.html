@@ -25,7 +25,8 @@
     let userInput = string.value;
     console.log(userInput);
     let numList = toNumList(userInput);
-    console.log(numList);
+    console.log("numList = " + numList);
+
     output = toNumberRelation(numList);
 
 
@@ -36,18 +37,24 @@
   toNumberRelation = (numList) => {
     console.log(numList);
     var outputStr = "";
-    var numRelation = new isNumRelation(numList);
-    if (numRelation.isAllEven() == true) {
-      console.log("all even is " + numRelation.isAllEven());
-      outputStr = "All is even";
+    try {
+      var numRelation = new isNumRelation(numList);
+      if (numRelation.isAllEven() == true) {
+        console.log("all even is " + numRelation.isAllEven());
+        outputStr = "All is even";
+      }
+      else if (numRelation.isAllOdd() == true) {
+        console.log("all odd is " + numRelation.isAllOdd());
+        outputStr = "All is odd";
+      }
+      else if (numRelation.isNoRelation() == true){
+        console.log("no relation is " + numRelation.isNoRelation());
+        outputStr = "No relationship between the numbers"
+      }
     }
-    else if (numRelation.isAllOdd() == true) {
-      console.log("all odd is " + numRelation.isAllOdd());
-      outputStr = "All is odd";
-    }
-    else {
-      console.log("no relation is " + numRelation.isNoRelation());
-      outputStr = "No relationship between the numbers"
+    catch (e) {
+      console.log(e);
+      outputStr = e.message;
     }
     return outputStr;
   }

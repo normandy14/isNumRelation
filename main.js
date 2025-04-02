@@ -1,7 +1,7 @@
 /*
 	main.js is  like if __name__ == "__main__"
 	main.js is just a series of manual tests, sort of like app.test.js, which contains
-	unit tests for app 
+	unit tests for app
 */
 
 const { isNumRelation } = require("./app");

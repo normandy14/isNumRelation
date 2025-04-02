@@ -4,6 +4,11 @@
 const DEBUG2 = false;
 
 let toNumList = (string) => {
+	console.log("string is " + string);
+	if (string == "") {
+		console.log("string is empty!");
+		return [];
+	}
 	numString = string.split(",");
 	// console.log(numString);
 	numList = []
@@ -13,6 +18,8 @@ let toNumList = (string) => {
 		s = parseInt(num);
 		numList.push(s);
 	}
+	console.log(numList)
+	console.log(numList[0])
 	return numList
 }
 
