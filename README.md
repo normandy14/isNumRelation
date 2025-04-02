@@ -11,7 +11,9 @@ If no relationship is found, then no relation.
 This program uses JavaScript. Uses JavaScript classes. Starting with es5, ending in es6.
 
 ### HTML5 and CCS3
-This program uses html to get user input, and then uses html to return relationships to user
+This program uses html to get user input, and then uses html to return relationships to user.
+
+The stylesheet for this project is simple.css, credit is from [simple css](https://github.com/kevquirk/simple.css/blob/main/simple.css)
 
 ## Running the program
 
