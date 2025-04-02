@@ -115,19 +115,3 @@ test("tests no numbers exception", () => {
       expect(e.message).toBe("No numbers in list");
   }
 });
-
-
-/*
-test("tests too many numbers exception", () => {
-  var numList = [1, 3, 11, 13, 15, 16, 17, 18, 19, 20 , 21, 22, 23];
-  expect(() => {
-   const numRelation = new isNumRelation(numList););
- }).toThrow("More than 10");
-})
-
-test('first test from isNumRelation', () => {
-  const numList = [1, 3, 5, 7];
-  let relation = isNumRelation(numList);
-  expect (relation.isAllOdd()).toBe(True);
-});
-*/

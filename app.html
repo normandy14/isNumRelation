@@ -8,6 +8,7 @@
   Enter numbers: <input type="text" id="UserInput" name="UserInput">
   <input type="submit">
 </form>
+<div id="numRelationOutput" name="numRelationOutput"></div>
 <script src="app.js"></script>
 <script src="appHelp.js"></script>
 <script>
@@ -25,15 +26,30 @@
     console.log(userInput);
     let numList = toNumList(userInput);
     console.log(numList);
-    toNumberRelation(numList);
+    output = toNumberRelation(numList);
+
+
+    document.getElementById("numRelationOutput").innerHTML = output;
+    // alert(document.getElementById("numRelationOutput").innerHTML);
   }
 
   toNumberRelation = (numList) => {
-    console.log(numList)
+    console.log(numList);
+    var outputStr = "";
     var numRelation = new isNumRelation(numList);
-    console.log("all even is " + numRelation.isAllEven());
-    console.log("all odd is " + numRelation.isAllOdd());
-    console.log("no relation is " + numRelation.isNoRelation());
+    if (numRelation.isAllEven() == true) {
+      console.log("all even is " + numRelation.isAllEven());
+      outputStr = "All is even";
+    }
+    else if (numRelation.isAllOdd() == true) {
+      console.log("all odd is " + numRelation.isAllOdd());
+      outputStr = "All is odd";
+    }
+    else {
+      console.log("no relation is " + numRelation.isNoRelation());
+      outputStr = "No relationship between the numbers"
+    }
+    return outputStr;
   }
 
 </script>
