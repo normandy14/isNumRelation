@@ -1,3 +1,7 @@
+/*
+	app.js exports the class isNumRelation
+*/
+
 //const toNumList = require('./appHelp')
 
 class isNumRelation {

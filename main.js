@@ -1,3 +1,7 @@
+/*
+	main.js is if __name__ == "__main__"
+*/
+
 const { isNumRelation } = require("./app");
 
 const DEBUG = true;
